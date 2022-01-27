@@ -1,0 +1,58 @@
+form {
+  margin-left: 150px;
+  letter-spacing: 0.25px;
+}
+
+h2 {
+  font-family: "Brandon Grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  src: url("BrandonGrotesque-Medium.woff2") format("woff2");
+  text-align: center;
+  color: rgb(236 93 87);
+}
+
+.form-headers {
+  font-family: "Brandon Grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  padding-left: 10px;
+  margin-top: 5px;
+  color: rgb(55 55 55);
+}
+
+input {
+  width: 75%;
+  padding: 15px 10px;
+  border-radius: 5px;
+  border-color: lightgray;
+  border-style: solid;
+  border-width: thin;
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+select {
+  width: 75%;
+  border-radius: 5px;
+  background-color: rgb(243 243 243);
+  padding: 15px 0;
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+.button {
+  text-align: right;
+  margin-right: 180px;
+  margin-top: 10px;
+}
+
+button {
+  color: white;
+  background-color: rgb(236 93 87);
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: large;
+}
