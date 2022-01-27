@@ -1,9 +1,10 @@
 form {
-  margin-left: 150px;
+  width: 50%;
   letter-spacing: 0.25px;
+  margin: auto;
 }
 
-h2 {
+h3 {
   font-family: "Brandon Grotesque", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -23,7 +24,7 @@ h2 {
 }
 
 input {
-  width: 75%;
+  width: 100%;
   padding: 15px 10px;
   border-radius: 5px;
   border-color: lightgray;
@@ -34,7 +35,7 @@ input {
 }
 
 select {
-  width: 75%;
+  width: 100%;
   border-radius: 5px;
   background-color: rgb(243 243 243);
   padding: 15px 0;
@@ -44,7 +45,6 @@ select {
 
 .button {
   text-align: right;
-  margin-right: 180px;
   margin-top: 10px;
 }
 
@@ -54,5 +54,5 @@ button {
   border: none;
   border-radius: 25px;
   padding: 10px 20px;
-  font-size: large;
+  font-size: 1rem;
 }
