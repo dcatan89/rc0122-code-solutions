@@ -75,6 +75,10 @@ ul {
   justify-content: right;
 }
 
+.centered-txt {
+  text-align: center;
+}
+
 .blue-logo {
   width: 30%;
   margin-left: 30px;
