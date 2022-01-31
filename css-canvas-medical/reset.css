@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  font-family: Avenir, sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Tiempos Headline", serif;
+}
+
+body {
+  margin: 0;
+}
