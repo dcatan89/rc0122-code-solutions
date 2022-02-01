@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Barlow, sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.row {
+  display: flex;
+}
+
+.column-full {
+  width: 100%;
+}
+
+.column-fourth {
+  width: 25%;
+}
+
+.bgc-lgrey {
+  background-color: rgb(247 248 250);
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.font-bold {
+  font-weight: bolder;
+}
+
+.icon-box {
+  width: 25%;
+  margin: 0 auto;
+}
+
+.font-small {
+  font-size: 12px;
+}
+
+.padding {
+  padding: 0 2%;
+  padding-bottom: 20px;
+}
+
+p {
+  padding-top: 10px;
+}
+
+.margin {
+  margin: 0 2%;
+}
