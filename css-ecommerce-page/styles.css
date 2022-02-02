@@ -25,15 +25,43 @@ h1 {
 }
 
 .font-small {
-  font-size: 11px;
+  font-size: 10.5px;
 }
 
 .lgrey-txt {
   color: rgb(234 234 234);
 }
 
+.border-left {
+  border-left: thin solid rgb(234 234 234);
+}
+
+.padding-left {
+  padding-left: 5px;
+}
+
 .bgc-pink {
   background-color: rgb(255 242 231);
+}
+
+.lv-box {
+  width: 160px;
+  height: 240px;
+}
+
+.lv-img {
+  background-image: url("images/lv-bag.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.pad-left-right {
+  padding: 0 5px;
+}
+
+.no-mrg-top {
+  margin-top: 0;
 }
 
 img {
