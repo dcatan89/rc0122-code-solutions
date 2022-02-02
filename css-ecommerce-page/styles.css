@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column-full {
+  width: 100%;
+}
+
+.column-fifth {
+  width: calc(100% / 5);
+}
+
+.font-small {
+  font-size: 10.5px;
+}
+
+.lgrey-txt {
+  color: rgb(234 234 234);
+}
+
+.border-left {
+  border-left: thin solid rgb(234 234 234);
+}
+
+.padding-left {
+  padding-left: 5px;
+}
+
+.bgc-pink {
+  background-color: rgb(255 242 231);
+}
+
+.lv-box {
+  width: 150px;
+  height: 240px;
+}
+
+.lv-img {
+  background-image: url("images/lv-bag.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.pad-left-right {
+  padding: 0 5px;
+}
+
+.no-mrg-top {
+  margin-top: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.center-txt {
+  text-align: center;
+}
