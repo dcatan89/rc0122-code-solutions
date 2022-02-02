@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column-full {
+  width: 100%;
+}
+
+.column-fifth {
+  width: calc(100% / 5);
+}
+
+.font-small {
+  font-size: 11px;
+}
+
+.lgrey-txt {
+  color: rgb(234 234 234);
+}
+
+.bgc-pink {
+  background-color: rgb(255 242 231);
+}
+
+img {
+  width: 100%;
+}
+
+.center-txt {
+  text-align: center;
+}
