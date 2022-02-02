@@ -7,7 +7,7 @@ var maxNum = Math.max(num1, num2, num3);
 console.log('Math.max value:', maxNum);
 
 var heroArr = ['DJ', 'Superman', 'Spiderman', 'Hulk'];
-var randomNumber = Math.random(heroArr);
+var randomNumber = Math.random();
 
 randomNumber = randomNumber * heroArr.length;
 
