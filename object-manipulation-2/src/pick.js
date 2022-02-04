@@ -5,6 +5,7 @@
 // define a new object literal
 // declare a for loop for the keys array and check if a value matches in source
 // if true make the array value a property assigned a value the same as the source
+// check if the values are not  undefined as well
 // return the new object literal as the output
 
 function pick(source, keys) {
