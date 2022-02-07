@@ -65,3 +65,4 @@ var cards = {
 };
 
 console.log(cards, players);
+console.log(players.p1);
