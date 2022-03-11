@@ -67,3 +67,16 @@ img {
 .yellow {
   background-color: yellow;
 }
+
+.card {
+  border: thin outset black;
+  margin-bottom: 10px;
+  box-shadow: 0 0 15px 5px black;
+  border-radius: 6px;
+}
+
+.closed-c {
+  border: solid black;
+  color: rgb(3 3 4);
+  border-radius: 50%;
+}
