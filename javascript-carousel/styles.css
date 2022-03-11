@@ -11,6 +11,18 @@ img {
   display: flex;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
+.justify-right {
+  justify-content: right;
+}
+
+.align-center {
+  align-items: center;
+}
+
 .col-full {
   width: 100%;
 }
@@ -25,4 +37,12 @@ img {
 
 .hidden {
   display: none;
+}
+
+.dots {
+  gap: 0.5rem;
+}
+
+.arrows {
+  font-size: 5rem;
 }
