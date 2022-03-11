@@ -11,6 +11,18 @@ img {
   display: flex;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
+.justify-right {
+  justify-content: right;
+}
+
+.align-center {
+  align-items: center;
+}
+
 .col-full {
   width: 100%;
 }
@@ -25,4 +37,46 @@ img {
 
 .hidden {
   display: none;
+}
+
+.dots {
+  gap: 0.5rem;
+}
+
+.arrows-left,
+.arrows-right {
+  font-size: 5rem;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.grey {
+  background-color: grey;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.card {
+  border: thin outset black;
+  margin-bottom: 10px;
+  box-shadow: 0 0 15px 5px black;
+  border-radius: 6px;
+}
+
+.closed-c {
+  border: solid black;
+  color: rgb(3 3 4);
+  border-radius: 50%;
 }

@@ -9,4 +9,4 @@ function countdown() {
   count--;
 }
 
-var intervalID = setInterval(countdown, 1000);
+var intervalID = setInterval(countdown, 3000);

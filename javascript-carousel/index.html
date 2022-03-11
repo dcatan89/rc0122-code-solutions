@@ -4,27 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JavaScript Carousel</title>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
     <div class="row">
-      <div class="col-half">
-        <i class="fa-regular fa-angle-left"></i>
-        <div class="row">
-          <img class="" src="images/001.png" alt="">
-          <img class="hidden" src="images/004.png" alt="">
-          <img class="hidden" src="images/007.png" alt="">
-          <img class="hidden" src="images/025.png" alt="">
-          <img class="hidden" src="images/039.png" alt="">
-        </div>
-        <i class="fa-solid fa-chevron-right"></i>
+      <div class="col-fourth row  align-center">
+        <i class="arrows-left justify-center row col-full fas fa-angle-left"></i>
+      </div>
+      <div class=" card col-half">
+        <img class="view" src="images/001.png" alt="">
+        <img class="hidden" src="images/004.png" alt="">
+        <img class="hidden" src="images/007.png" alt="">
+        <img class="hidden" src="images/025.png" alt="">
+        <img class="hidden" src="images/039.png" alt="">
+      </div>
+      <div class="row justify-center align-center col-fourth">
+        <i class="arrows-right col-full row justify-center fas fa-angle-right"></i>
       </div>
     </div>
-    <div class="row">
+    <div class="dots row justify-center">
+      <i class="far fa-circle open-c hidden"></i>
+      <i class="show fas fa-circle closed-c"></i>
+      <i class="far fa-circle open-c"></i>
+      <i class="fas fa-circle hidden closed-c"></i>
+      <i class="far fa-circle open-c"></i>
+      <i class="fas fa-circle hidden closed-c"></i>
+      <i class="far fa-circle open-c"></i>
+      <i class="fas fa-circle hidden closed-c"></i>
+      <i class="far fa-circle open-c"></i>
+      <i class="fas fa-circle hidden closed-c"></i>
     </div>
   </div>
   <script src="main.js"></script>
