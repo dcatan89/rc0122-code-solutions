@@ -43,6 +43,7 @@ img {
   gap: 0.5rem;
 }
 
-.arrows {
+.arrows-left,
+.arrows-right {
   font-size: 5rem;
 }
