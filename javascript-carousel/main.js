@@ -8,7 +8,7 @@ var $openCircle = document.querySelectorAll('.open-c');
 var carasouelCount = 0;
 
 function handleArrowClick(event) {
-  var randomIndex = Math.floor(Math.random() * 6);
+  var randomIndex = Math.floor(Math.random() * 5);
   $body.className = bgcColors[randomIndex];
   if (event.target === $leftArrow) {
     --carasouelCount;
@@ -49,7 +49,7 @@ $rightArrow.addEventListener('click', handleArrowClick);
 /* Dot Click Event Listener */
 var $dotRow = document.querySelector('.dots');
 function viewCircle(event) {
-  var randomIndex = Math.floor(Math.random() * 6);
+  var randomIndex = Math.floor(Math.random() * 5);
   $body.className = bgcColors[randomIndex];
   clearInterval(intervalID);
   intervalID = setInterval(carasouel, 3000);
@@ -74,7 +74,7 @@ function viewCircle(event) {
 $dotRow.addEventListener('click', viewCircle);
 
 function carasouel() {
-  var randomIndex = Math.floor(Math.random() * 6);
+  var randomIndex = Math.floor(Math.random() * 5);
   $body.className = bgcColors[randomIndex];
   carasouelCount++;
   handleImgView();
