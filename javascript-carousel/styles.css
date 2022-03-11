@@ -47,3 +47,23 @@ img {
 .arrows-right {
   font-size: 5rem;
 }
+
+.pink {
+  background-color: pink;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.grey {
+  background-color: grey;
+}
+
+.yellow {
+  background-color: yellow;
+}
