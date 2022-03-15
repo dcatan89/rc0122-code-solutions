@@ -1,0 +1,479 @@
+    1  exit
+    2  ~/repos/c1121-code-solutions/
+    3  cd ~/repos/c11
+    4  cd ~/repos/c1121-code-solutions/
+    5  dev-env
+    6  exit
+    7  cd ~/repos/c1121-code-solutions/
+    8  git branch http-messages
+    9  git switch http-messages
+   10  http GET https://example.com
+   11  http --verbose https://example.com
+   12  http --body GET https://jsonplaceholder.typicode.com/users > http-messages/users.json
+   13  http --body GET https://example.com > http-messages/index.html
+   14  cd http-messages
+   15  ls
+   16  http --body GET https://example.com > http-messages/index.html
+   17  cd /~repos/c1121-code-solutions
+   18  exit
+   19  cd ~/repos/c1121-code-solutions/
+   20  http --body GET https://jsonplaceholder.typicode.com/users > http-messages/users.json
+   21  http --body GET https://example.com > http-messages/index.html
+   22  git status
+   23  git add http-messages
+   24  git commit -m "http-msg complete"
+   25  git push origin http-messages
+   26  exit
+   27  cd ~/repos/c1121-code-solutions/
+   28  git branch javascript-ajax
+   29  git switch javascript-ajax
+   30  git status
+   31  git add javascript-ajax
+   32  git commit -m "in progress"
+   33  cd ~/repos/c1121-code-solutions/
+   34  cd ~/repos/code-journal
+   35  git status
+   36  git add js
+   37  git commit-m "changed lines that were uncessary and entry Id value"
+   38  git commit -m "made changes to the entry id value of edited entries"
+   39  git push origin issue-3-edit-entries
+   40  cd ~/repos/c1121-code-solutions/
+   41  git status
+   42  git add javascript-ajax
+   43  git commit-m "js ajax completed"
+   44  git commit -m "ajax completed"
+   45  git push origin javascript-ajax
+   46  git cd ~/repos/code-journal
+   47  cd ~/repos/code-journal
+   48  git add js
+   49  git commit -m "changed data entry Id property to correct name"
+   50  git push origin issue-3-edit-entries
+   51  git add issue-3-edit-entries
+   52  git add js
+   53  git commit -m "removed entry id as it was uneccessary"
+   54  git push origin issue-3-edit-entries
+   55  git switch master
+   56  git pull origin master
+   57  git branch issue-4-deleting-entries
+   58  git switch branch issue-4-deleting-entries
+   59  git switch issue-4-deleting-entries
+   60  http GET https://api.jikan.moe/v3
+   61  /anime/{id}(/episodes)
+   62  http GET https://api.jikan.moe/v3/anime/{id}(/episodes)
+   63  git switch master
+   64  cd ~/repos/c1121-code-solutions/
+   65  git switch master
+   66  git branch string-manipulation-3
+   67  git switch string-manipulation-3
+   68  http GET https://api.jikan.moe/v3/anime/stats
+   69  http GET https://api.jikan.moe/v3
+   70  http GET https://api.jikan.moe/v3/anime
+   71  http GET https://api.jikan.moe/v3//anime/{id}(/episodes)
+   72  http GET https://api.jikan.moe/v3/anime?q=naruto
+   73  git status
+   74  git add string0manipulation-3
+   75  git add string-manipulation-3
+   76  git commit -m "in progress"
+   77  git switch array-manipulation-2
+   78  git switch master
+   79  cd ~/repos
+   80  cd week-planner
+   81  git clone week-planner
+   82  git clone git@github.com:seankim248/week-planner.git
+   83  cd ~/repos/week-planner
+   84  npm ci
+   85  whoami
+   86  git config --global user.name "dcatan89"
+   87  git config --global user.email "danieljcatan@gmail.com"
+   88  git config --global --list
+   89  whoami
+   90  git config --global --list
+   91  whoami
+   92  cd ~/repos/rc0122-code-solutions/
+   93  git branch javascript-prototypes
+   94  git switch javascript-prototypes
+   95  exit
+   96  cd ~/repos/rc0122-code-solutions/
+   97  git status
+   98  git add.
+   99  git add .
+  100  git commit -m "js prototypes completed"
+  101  git push origin javascript-prototypes
+  102  exit
+  103  cd ~/repos/rc0122-code-solutions/
+  104  git switch master
+  105  git pull origin master
+  106  git branch http-messages
+  107  git switch http-messages
+  108  $ http GET https://example.com
+  109  GET https://example.com
+  110  git switch master
+  111  http GET https://example.com
+  112  git switch http-messages
+  113  http GET --verbose https://example.com
+  114  exit
+  115  cd ~/repos/rc0122-code-solutions/
+  116  http --body GET https://jsonplaceholder.typicode.com/users > http-messages/users.json
+  117  http --body GET https://example.com > http-messages/index.html
+  118  git status
+  119  git add 
+  120  git commit -m "http messages complete"
+  121  git add .
+  122  git commit -m "http messages complete"
+  123  git push origin http-messages
+  124  cd ~/repos/rc0122-code-solutions/
+  125  git branch javascript-ajax
+  126  git switch javascript-ajax
+  127  git add .
+  128  git commit -m "js ajax completed"
+  129  git push origin javascript-ajax
+  130  git switch master
+  131  exit
+  132  cd ~/repos/rc0122-code-solutions/
+  133  http GET https://api.jikan.moe/v4/anime/{id}
+  134  http GET https://api.jikan.moe/v4/anime/{id}/episodes
+  135  http GET https://api.jikan.moe/v4/anime/{id}/characters
+  136  http GET https://api.jikan.moe/v4/anime/{id}/characters0
+  137  http GET https://api.jikan.moe/v4/anime/{5}
+  138  http GET https://api.jikan.moe/v4/anime/1735
+  139  http GEThttps://api.jikan.moe/v4/anime/{id}/sasuke
+  140  http GET  https://api.jikan.moe/v4/anime/{id}/sasuke
+  141  http GET https://api.jikan.moe/v4/anime/1735/sakura
+  142  http GET https://api.jikan.moe/v4/anime/{id}/Sakura
+  143  http GET https://api.jikan.moe/v4/anime/{id}/17
+  144  http GET https://api.jikan.moe/v4/anime/1735/13
+  145  http GET https://api.jikan.moe/v4/anime/1735
+  146  http GET https://api.jikan.moe/v4/anime/1730
+  147  http GET https://ghibliapi.herokuapp.com
+  148  http GET https://api.jikan.moe/v4/genres/anime
+  149  http GET https://api.jikan.moe/v4/anime
+  150  http GET https://api.mangadex.org/manga
+  151  GET /manga/f9c33607-9180-4ba6-b85c-e4b5faee7192?includes[]=author&includes[]=artist&includes[]=cover_art
+  152  cd ~/repos/rc0122-code-solutions/
+  153  http GET https://api.jikan.moe/v4/anime/{id}
+  154  http GET https://api.jikan.moe/v4/anime/{id}/episodes
+  155  http GET https://api.jikan.moe/v4/anime/{id}/characters
+  156  http GET https://api.jikan.moe/v4/anime/{id}/characters0
+  157  http GET https://api.jikan.moe/v4/anime/{5}
+  158  http GET https://api.jikan.moe/v4/anime/1735
+  159  http GEThttps://api.jikan.moe/v4/anime/{id}/sasuke
+  160  http GET  https://api.jikan.moe/v4/anime/{id}/sasuke
+  161  http GET https://api.jikan.moe/v4/anime/1735/sakura
+  162  http GET https://api.jikan.moe/v4/anime/{id}/Sakura
+  163  http GET https://api.jikan.moe/v4/anime/{id}/17
+  164  http GET https://api.jikan.moe/v4/anime/1735/13
+  165  http GET https://api.jikan.moe/v4/anime/1735
+  166  http GET https://api.jikan.moe/v4/anime/1730
+  167  http GET https://ghibliapi.herokuapp.com
+  168  http GET https://api.jikan.moe/v4/genres/anime
+  169  http GET https://api.jikan.moe/v4/anime
+  170  http GET https://api.mangadex.org/manga
+  171  GET /manga/f9c33607-9180-4ba6-b85c-e4b5faee7192?includes[]=author&includes[]=artist&includes[]=cover_art
+  172  http GET /manga/f9c33607-9180-4ba6-b85c-e4b5faee7192?includes[]=author&includes[]=artist&includes[]=cover_art
+  173  cd ~/repos/rc0122-code-solutions/
+  174  http GET https://api.jikan.moe/v4/anime/{id}
+  175  http GET https://api.jikan.moe/v4/anime/{id}/episodes
+  176  http GET https://api.jikan.moe/v4/anime/{id}/characters
+  177  http GET https://api.jikan.moe/v4/anime/{id}/characters0
+  178  http GET https://api.jikan.moe/v4/anime/{5}
+  179  http GET https://api.jikan.moe/v4/anime/1735
+  180  http GEThttps://api.jikan.moe/v4/anime/{id}/sasuke
+  181  http GET  https://api.jikan.moe/v4/anime/{id}/sasuke
+  182  http GET https://api.jikan.moe/v4/anime/1735/sakura
+  183  http GET https://api.jikan.moe/v4/anime/{id}/Sakura
+  184  http GET https://api.jikan.moe/v4/anime/{id}/17
+  185  http GET https://api.jikan.moe/v4/anime/1735/13
+  186  http GET https://api.jikan.moe/v4/anime/1735
+  187  http GET https://api.jikan.moe/v4/anime/1730
+  188  http GET https://ghibliapi.herokuapp.com
+  189  http GET https://api.jikan.moe/v4/genres/anime
+  190  http GET https://api.jikan.moe/v4/anime
+  191  http GET https://api.mangadex.org/manga
+  192  GET /manga/f9c33607-9180-4ba6-b85c-e4b5faee7192?includes[]=author&includes[]=artist&includes[]=cover_art
+  193  http GET /manga/f9c33607-9180-4ba6-b85c-e4b5faee7192?includes[]=author&includes[]=artist&includes[]=cover_art
+  194  https://dragon-ball-api.herokuapp.com/api/character
+  195  http GET https://dragon-ball-api.herokuapp.com/api/character
+  196  http GET https://dragon-ball-api.herokuapp.com/api/characters
+  197  https://dragon-ball-api.herokuapp.com/api/
+  198  http GET https://dragon-ball-api.herokuapp.com/api/Gohan
+  199  http GET https://api.coingecko.com/api/v3/ping
+  200  http GET https://www.coingecko.com/api/coins/list
+  201  http GET https://pro-api.coinmarketcap.com/v1/key/info
+  202  cd ~/repos
+  203  git clone git@github.com:dcatan89/ajax-project.git
+  204  cd ajax-project/
+  205  npm ci
+  206  git branch issue-1-search-coins
+  207  git switch issue-1-search-coins
+  208  git switch master
+  209  cd ~/repos/ajax-project/
+  210  git switch issue-1-search-coins
+  211  git add .
+  212  git commit -m "added icons "
+  213  git add .
+  214  git commit -m "added more icons"
+  215  cd ~/repos/ajax-project/
+  216  git commit "finsihed new dom tree for trending api"
+  217  git commit -m "finsihed new dom tree for trending api"
+  218  git push origin issue-5-top100-search
+  219  git status
+  220  git add .
+  221  git commit -m "minor changes to clean up some parts"
+  222  git status
+  223  git add . 
+  224  git commit -m "cleaned and shorten uneccessary lines of code"
+  225  git push origin issue-5-top100search
+  226  git push origin issue-5-top100-search
+  227  cd repos
+  228  cd ~/repos/code-journalv2
+  229  git status
+  230  git add . 
+  231  git commit -m "finished js functionality for modal and deleting confirmation"
+  232  git push origin issue-4-delete-entries
+  233  cd ~/repos/ajax-project/
+  234  git switch master
+  235  git pull origin master
+  236  cd ~/repos/rc0122-code-solutions/
+  237  git switch object-manipulation-3
+  238  git add .
+  239  git push origin object-manipulation-3
+  240  git commit -m "obj manippulation 3"
+  241  git status
+  242  git commit -m "obj manipulation 3 completed"
+  243  git status
+  244  exit
+  245  cd ~/repos/ajax-project/
+  246  git status
+  247  git add .
+  248  git commit -m "small update"
+  249  git push origin master
+  250  git status
+  251  cd ~/repos/rc0122-code-solutions/
+  252  git add .
+  253  git commit -m "html finsihed for carasouel"
+  254  git add .
+  255  git commit -m "arrows work for changing images"
+  256  git status
+  257  git add .
+  258  git commit -m "arrows click event listeners working "
+  259  git add .
+  260  git commit -m "timers work and refresh "
+  261  git push origin javascript-carasouel
+  262  git status
+  263  git add . 
+  264  git commit -m "completed to save"
+  265  git push origin javscript-carasouel
+  266  git push origin javascript-carasouel
+  267  git status
+  268  git switch master
+  269  git switch javascript-carasouel
+  270  git branch -M javascript-carousel
+  271  git status
+  272  git push origin javascript-carousel
+  273  git status
+  274  git add .
+  275  git commit -m "change numbers to be valid range"
+  276  git push origin javascript-carousel
+  277  git switch master
+  278  git pull origin master
+  279  cd ~/repos/ajax-project/
+  280  git status
+  281  git add .
+  282  git commit -m "css updates for a more modern feel"
+  283  git push origin master
+  284  git status
+  285  git add .
+  286  git commit -m "ui/ux update to make it look more modern"
+  287  git add .
+  288  git status
+  289  git add .
+  290  git commit -m "Scroll event added for better navvar UI"
+  291  git push origin master
+  292  git add .
+  293  git commit -m "added animations to dropmenu"
+  294  git push origin master
+  295  git add .
+  296  git commit -m "made anchors highlight when on a certain page"
+  297  git push origin master
+  298  cd ~/repos/ajax-project/
+  299  git status
+  300  git add . 
+  301  git commit -m "in progress starting search feature"
+  302  git add .
+  303  git commit -m "api listed"
+  304  git add .
+  305  git commit -m "api listed"
+  306  cd ~/repos/rc0122-code-solutions/
+  307  git switch master
+  308  cd ~/repos/ajax-project/
+  309  git add .
+  310  git commit -m "api working and propelled into data"
+  311  git add .
+  312  git commit -m "in progess on the search function"
+  313  git add .
+  314  git commit -m "search bar in progress"
+  315  git add .
+  316  git commit -m "search bar in progress"
+  317  git add .
+  318  git commit -m "used a second API to get data for the chart"
+  319  git add .
+  320  git commit -m "made a function to call for search feature"
+  321  git status
+  322  git add .
+  323  git commit -m "api function made, need to include it somehow in the search feature"
+  324  $ npm install lodash
+  325  npm install lodash
+  326  git add .
+  327  git commit -m "Both search bars work and siplay data"
+  328  git push origin issue-`-search-coins
+  329  cd ~/repos/ajax-project/
+  330  git push origin issue-1-search-coins
+  331  git switch master
+  332  git add .
+  333  git commit -m "saving for master branch"
+  334  git push origin master
+  335  git push origin issue-1-search-coins
+  336  git switch master
+  337  git pull origin master
+  338  git branch issue-2-add-watchlist
+  339  git switch issue-2-add-watchlist
+  340  git add .
+  341  git commit -m "local storage working and saving entries"
+  342  git push origin issue-2-add-watchlist
+  343  git push oirgin issue-2add-watchlist
+  344  git status
+  345  git push origin issue-2-add-watchlist
+  346  git switch master
+  347  git pull origin mastert
+  348  git pull origin master
+  349  git branch issue-3-view-watchlist
+  350  git switch issue-3-view-watchlist
+  351  git status
+  352  git add .
+  353  git commit -m "starting on dom tree and created the css for the watchlist"
+  354  git status
+  355  git add .
+  356  git commit -m "dom tree in progress"
+  357  git add . 
+  358  git commit -m "dom tree completed, data view and minor changes in progress"
+  359  git add .
+  360  git commit -m "hamburger icon watchlist added"
+  361  git status
+  362  git commit -m "issue 3 view watchlist completed"
+  363  git add .
+  364  git commit -m "issue 3 view watchlist completed"
+  365  git add .
+  366  git commit -m "added anchor button"
+  367  git add .
+  368  git commit -m "added watchlist anchor"
+  369  git push origin issue-3-view-watchlist
+  370  git add .
+  371  git commit -m "no entries added when length is 0"
+  372  git push origin issue-3-view-watchlist
+  373  git status
+  374  git add .
+  375  git commit -m "issue 3 view watchlist completed"
+  376  git push origin issue-3-view-watchlist
+  377  git switch master
+  378  git status
+  379  git add .
+  380  git commit -m " function added for api use"
+  381  git add .
+  382  git commit -m " function added to test api functionality and implementation"
+  383  git push origin issue-3-view-watchlist
+  384  git switch master
+  385  git pull origin master
+  386  git switch issue-3-view-watchlist
+  387  git add
+  388  git status
+  389  git switch master
+  390  git switch  issue-3-view-watchlist
+  391  git status
+  392  git add .
+  393  git commit -m "needed to revert to save new content"
+  394  git push origin issue-3-view-watchlist
+  395  git push revert-9-issue-3-view-watchlist
+  396  git switch master
+  397  git pull origin master
+  398  git branch issue-3-delete-watchlist
+  399  git switch issue-3-delete-watchlist
+  400  git branc -M issue-4-delete-watchlist
+  401  git branch -M issue-4-delete-watchlist
+  402  git add .
+  403  git commit -m "bubbling working, each entries data can be viewed individually"
+  404  git add .
+  405  git commit -m "bubbling workedeach entries data can be viewed, handle click for back to worklist done as well"
+  406  git add .
+  407  git commit -m "modal overlay working"
+  408  git status
+  409  git add .
+  410  git status
+  411  git commit -m "entries now can be deleted as well as the li element"
+  412  git push origin issue-4-delete-watchlist
+  413  git switch master
+  414  git pull origin master
+  415  git branch issue-5-top100-search
+  416  git switch issue-5-top100-search
+  417  git add .
+  418  git commit -m "finsihed creating dom tree for 100 api
+  419  cd ~/repos
+  420  cd ~/repos/rc0122-code-solutions/
+  421  cd command-line-basics
+  422  cat laziness.txt
+  423  cat impatience.txt
+  424  cat hubris.txt
+  425  cat laziness.txt imatience.txt hubris.txt
+  426  cat laziness.txt impatience.txt hubris.txt
+  427  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  428  cd ~/repos/rc0122-code-solutions/
+  429  git switch command-line-basics
+  430  git branch command-line-basics
+  431  git switch command-line-basics
+  432  cd command-line-basics
+  433  pwd
+  434  cat three-virtues.txt
+  435  man ls
+  436  ls -a -F
+  437  man ls
+  438  ls lfz-staff/ -a -F
+  439  ls -aF lfz-staff > lfz-staff/contents.txt
+  440  cat lfz-staff/contents.txt
+  441  man pwd
+  442  pwd
+  443  pwd > i-was-here.txt
+  444  ls 
+  445  ls pwd
+  446  pwd ls
+  447  cat i-1as-here-.txt
+  448  cat i-was-here.txt
+  449  man echo
+  450  echo 'Hello, World!'
+  451  echo 'Hello, World' > hello.txt
+  452  ls
+  453  cat hello.txt
+  454  man touch
+  455  touch tag-youre-it.txt
+  456  man touch
+  457  touch snoot/boop.txt
+  458  ls snoot/
+  459  man mkdir
+  460  mkdir parent
+  461  ls parent
+  462  ls 
+  463  mkdir -p parent/child/randchild
+  464  ls -a
+  465  touch > parent/child/randchild
+  466  touch parent/child/randchild/.gitkeep
+  467  ls -a
+  468  ls -a parent/child/randchild
+  469  man rm
+  470  rm lol.txt
+  471  ls 
+  472  rm -r kill-me/
+  473  ls 
+  474  man cp
+  475  cp and-then.txt no-and-then.txt
+  476  cat and-then.txt no-and-then.txt
+  477  man history
+  478  history
+  479  history > command-history.txt
