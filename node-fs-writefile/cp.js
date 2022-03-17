@@ -5,7 +5,7 @@ const copied = process.argv[3];
 
 fs.readFile(note, (err, data) => {
   if (err) throw err;
-  const content = new Uint8Array(Buffer.from(`${data}`));
+  const content = new Uint8Array(Buffer.from(`${data}\n`));
   fs.writeFile(copied, content, err => {
     if (err) throw err;
   });
