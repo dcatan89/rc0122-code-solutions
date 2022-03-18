@@ -18,7 +18,7 @@ if (action === 'read') {
 } else if (action === 'update') {
   const update = process.argv[3];
   for (let i = 1; i < `${json.nextId}`; i++) {
-    if (`${json.notes[i]}` === json.notes[update]) {
+    if (parseInt(update) === i) {
       json.notes[i] = process.argv[4];
     }
   }
