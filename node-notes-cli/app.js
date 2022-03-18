@@ -13,4 +13,18 @@ if (action === 'read') {
     if (err) throw err;
   }
   );
+} else if (action === 'update') {
+  const update = process.argv[3];
+  json.notes[update] = process.argv[4];
+  fs.writeFile('data.json', `${JSON.stringify(json, null, 2)}`, err => {
+    if (err) throw err;
+  }
+  );
+} else if (action === 'delete') {
+  const vanish = process.argv[3];
+  delete json.notes[vanish];
+  fs.writeFile('data.json', `${JSON.stringify(json, null, 2)}`, err => {
+    if (err) throw err;
+  }
+  );
 }
