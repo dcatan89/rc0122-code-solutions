@@ -5,7 +5,7 @@ const copied = process.argv[3];
 
 fs.readFile(note, (err, data) => {
   if (err) throw err;
-  fs.writeFile(copied, `${data}\n`, err => {
+  fs.writeFile(copied, `${data}`, err => {
     if (err) throw err;
   });
 });
