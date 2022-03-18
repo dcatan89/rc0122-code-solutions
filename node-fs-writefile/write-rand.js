@@ -1,7 +1,6 @@
 const fs = require('fs');
 const randomNum = Math.random();
-const data = new Uint8Array(Buffer.from(`${randomNum}\n`));
 
-fs.writeFile('random.txt', data, err => {
+fs.writeFile('random.txt', `${randomNum}\n`, err => {
   if (err) throw err;
 });
