@@ -2,10 +2,12 @@ const fs = require('fs');
 const json = require('./data.json');
 const action = process.argv[2];
 
-const read = JSON.stringify(json, null, 2);
-
 if (action === 'read') {
-  console.log(read);
+  for (let i = 1; i < `${json.nextId}`; i++) {
+    if (`${json.notes[i]}` !== 'undefined') {
+      console.log(`${i}: ${json.notes[i]}`);
+    }
+  }
 } else if (action === 'add') {
   const note = process.argv[3];
   json.notes[json.nextId++] = note;
@@ -15,7 +17,11 @@ if (action === 'read') {
   );
 } else if (action === 'update') {
   const update = process.argv[3];
-  json.notes[update] = process.argv[4];
+  for (let i = 1; i < `${json.nextId}`; i++) {
+    if (`${json.notes[i]}` === json.notes[update]) {
+      json.notes[i] = process.argv[4];
+    }
+  }
   fs.writeFile('data.json', `${JSON.stringify(json, null, 2)}`, err => {
     if (err) throw err;
   }
