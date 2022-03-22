@@ -26,7 +26,6 @@ app.get('/api/grades', (req, res) => {
   for (const property in grades) {
     array.push(grades[property]);
   }
-  JSON.stringify(array);
   res.send(array);
 });
 
