@@ -34,18 +34,15 @@ app.get('/api/notes/:id', (req, res) => {
 
 app.post('/api/notes', (req, res) => {
   const note = req.body;
-  if (note === 'undefined') {
+  if (!note.content) {
     res.status(400).json({
-      error: 'content required'
+      error: 'content is a required field'
     });
     return;
   }
 
-  const info = {
-    id: data.nextId
-  };
-
-  data.notes[data.nextId] = info;
+  note.id = data.nextId;
+  data.notes[data.nextId] = note;
   data.nextId++;
 
   fs.writeFile('data.json', `${JSON.stringify(data, null, 2)}`, err => {
@@ -55,7 +52,7 @@ app.post('/api/notes', (req, res) => {
       })
       );
     } else {
-      res.status(201).json(data.notes[data.nextId]);
+      res.status(201).send(note);
     }
   });
 });
