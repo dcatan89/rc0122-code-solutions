@@ -1,3 +1,4 @@
+const fs = require('fs');
 const express = require('express');
 const app = express();
 const data = require('./data.json');
@@ -29,8 +30,35 @@ app.get('/api/notes/:id', (req, res) => {
   } else {
     res.json(data.notes[id]);
   }
-}
-);
+});
+
+app.post('/api/notes', (req, res) => {
+  const note = req.body;
+  if (note === 'undefined') {
+    res.status(400).json({
+      error: 'content required'
+    });
+    return;
+  }
+
+  const info = {
+    id: data.nextId
+  };
+
+  data.notes[data.nextId] = info;
+  data.nextId++;
+
+  fs.writeFile('data.json', `${JSON.stringify(data, null, 2)}`, err => {
+    if (err) {
+      console.error(res.status(500).json({
+        error: 'An unexpected error occurred.'
+      })
+      );
+    } else {
+      res.status(201).json(data.notes[data.nextId]);
+    }
+  });
+});
 app.listen(3000, (req, res) => {
   // eslint-disable-next-line no-console
   console.log('3000 port Running');
