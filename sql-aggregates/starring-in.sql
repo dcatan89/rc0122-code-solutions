@@ -4,5 +4,6 @@ select  "g"."name" as "Genres",
   join "filmGenre" using ("genreId")
   join "castMembers" using ("filmId")
   join "actors" using ("actorId")
-  where "actorId" = 178
+  where "firstName" = 'Lisa' and
+        "lastName" = 'Monroe'
   group by "g"."name";
