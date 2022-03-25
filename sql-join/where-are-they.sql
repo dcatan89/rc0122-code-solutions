@@ -4,4 +4,4 @@ select "line1",
        "count". "name" as "Country"
   from "addresses"
   join "cities" as "c" using ("cityId")
-  join "countries" as "count" using("countryId");
+  join "countries" as "count" using ("countryId");
