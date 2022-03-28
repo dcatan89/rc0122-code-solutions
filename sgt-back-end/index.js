@@ -38,6 +38,7 @@ app.post('/api/grades', (req, res) => {
     res.status(400).json({
       error: 'Content must include valid course, name, and score'
     });
+    return;
   }
   const params = [
     student.name,
@@ -61,6 +62,59 @@ app.post('/api/grades', (req, res) => {
       });
     });
 });
+
+app.put('/api/grades/:gradeId', (req, res) => {
+  const student = req.body;
+  const gradeId = Number(req.params.gradeId);
+
+  if (!Number.isInteger(gradeId) || gradeId <= 0) {
+    res.status(400).json({
+      error: 'GradeId must be a positive integer'
+    });
+    return;
+  }
+
+  student.score = parseInt(student.score);
+  if (student === 'undefined' || !Number.isInteger(student.score) ||
+    student.score > 100 || student.score < 0 ||
+    (student.name || student.course || student.score) === 'undefined') {
+    res.status(400).json({
+      error: 'Content must include valid course, name, and score'
+    });
+    return;
+  }
+
+  const params = [
+    student.name,
+    student.course,
+    student.score
+  ];
+  const sql = `
+  update "grades"
+    set name=$1, course=$2, score=$3
+    where "gradeId" = ${gradeId}
+  returning *
+  `;
+
+  db.query(sql, params)
+    .then(result => {
+      const grade = result.rows[0];
+      if (!grade) {
+        res.status(404).json({
+          error: `Cannot find grade with gradeId ${gradeId}`
+        });
+        return;
+      }
+      res.json(result.rows[0]);
+    })
+    .catch(err => {
+      console.error(err);
+      res.status(500).json({
+        error: 'An unexpected error occurred.'
+      });
+    });
+});
+
 app.listen(3000, (req, res) => {
   // eslint-disable-next-line no-console
   console.log('3000 port Running');
