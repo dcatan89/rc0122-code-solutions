@@ -32,9 +32,15 @@ app.get('/api/grades', (req, res) => {
 app.post('/api/grades', (req, res) => {
   const student = req.body;
   student.score = parseInt(student.score);
-  if (student === 'undefined' || !Number.isInteger(student.score) ||
-    student.score > 100 || student.score < 0 ||
-    (student.name || student.course || student.score) === 'undefined') {
+  if (!Number.isInteger(student.score) ||
+    student.score > 100 || student.score < 0) {
+    res.status(400).json({
+      error: 'Score must be a positive integer between 0-100'
+    });
+    return;
+  }
+
+  if (!student || (typeof student.name || typeof student.course || typeof student.score) === 'undefined') {
     res.status(400).json({
       error: 'Content must include valid course, name, and score'
     });
@@ -75,9 +81,15 @@ app.put('/api/grades/:gradeId', (req, res) => {
   }
 
   student.score = parseInt(student.score);
-  if (student === 'undefined' || !Number.isInteger(student.score) ||
-    student.score > 100 || student.score < 0 ||
-    (student.name || student.course || student.score) === 'undefined') {
+  if (!Number.isInteger(student.score) ||
+    student.score > 100 || student.score < 0) {
+    res.status(400).json({
+      error: 'Score must be a positive integer between 0-100'
+    });
+    return;
+  }
+
+  if (!student || (typeof student.name || typeof student.course || typeof student.score) === 'undefined') {
     res.status(400).json({
       error: 'Content must include valid course, name, and score'
     });
