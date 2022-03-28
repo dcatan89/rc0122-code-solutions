@@ -19,8 +19,7 @@ app.get('/api/grades', (req, res) => {
     `;
   db.query(sql, params)
     .then(result => {
-      const grade = result.rows;
-      res.json(grade);
+      res.json(result.rows);
     })
     .catch(err => {
       console.error(err);
@@ -30,6 +29,38 @@ app.get('/api/grades', (req, res) => {
     });
 });
 
+app.post('/api/grades', (req, res) => {
+  const student = req.body;
+  student.score = parseInt(student.score);
+  if (student === 'undefined' || !Number.isInteger(student.score) ||
+    student.score > 100 || student.score < 0 ||
+    (student.name || student.course || student.score) === 'undefined') {
+    res.status(400).json({
+      error: 'Content must include valid course, name, and score'
+    });
+  }
+  const params = [
+    student.name,
+    student.course,
+    student.score
+  ];
+  const sql = `
+  insert into "grades"("name", "course", "score")
+  values($1, $2, $3)
+  returning *;
+  `;
+  db.query(sql, params)
+    .then(result => {
+      res.status(201).json(result.rows[0]);
+    }
+    )
+    .catch(err => {
+      console.error(err);
+      res.status(500).json({
+        error: 'An unexpected error occurred.'
+      });
+    });
+});
 app.listen(3000, (req, res) => {
   // eslint-disable-next-line no-console
   console.log('3000 port Running');
