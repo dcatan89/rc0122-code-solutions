@@ -9,9 +9,9 @@ const languages = [
 ];
 
 const doubled = numbers.map(number => number * 2);
-const prices = numbers.map(numbers => numbers.toFixed(2));
+const prices = numbers.map(numbers => `$${numbers.toFixed(2)}`);
 const upperCased = languages.map(word => word.toUpperCase());
-const firstLetters = languages.map(word => word.charAt(0));
+const firstLetters = languages.map(word => word[0]);
 console.log(`Numbers but doubled: ${doubled}`);
 console.log(`Prices: ${prices}`);
 console.log(`All Uppercased: ${upperCased}`);
