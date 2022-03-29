@@ -30,23 +30,16 @@ const product = numbers.reduce(
 
 console.log('Product:', product);
 
-const balance = account.reduce(
-  (previousValue, currentValue) => {
-    let { type = currentValue.type, amount } = previousValue;
-    const { amount: amount1 } = currentValue;
-    if (currentValue.type === 'withdrawal') {
-      amount = amount - amount1;
-      previousValue.amount = amount;
-      return previousValue;
-    }
-
-    amount = amount + amount1;
-    previousValue.amount = amount;
-    return previousValue;
+const net = (balance, transaction) => {
+  if (transaction.type === 'deposit') {
+    return balance + transaction.amount;
   }
-);
+  return balance - transaction.amount;
+};
 
-console.log('Balance:', balance.amount);
+const balance = account.reduce(net, 0);
+
+console.log('Balance:', balance);
 
 const composite = traits.reduce(
   (pValue, cValue) => {
