@@ -1,5 +1,5 @@
 import React from 'react';
-import * as ReactDOMClient from 'react-dom/client';
+import * as ReactDOM from 'react-dom';
 
 const h1 = React.createElement(
   'h1',
@@ -7,6 +7,4 @@ const h1 = React.createElement(
   ['Hello, React']
 );
 const container = document.querySelector('#root');
-const root = ReactDOMClient.createRoot(container);
-
-root.render(h1);
+ReactDOM.render(h1, container);
