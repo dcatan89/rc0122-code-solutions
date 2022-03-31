@@ -19,6 +19,7 @@ class ToggleSwitch extends React.Component {
     const { isOn } = this.state;
     let bgc;
     let boxPosition;
+
     if (isOn) {
       bgc = 'bgc-green';
       boxPosition = 'right';
