@@ -31,7 +31,7 @@ class ToggleSwitch extends React.Component {
     return (
     <div className='row'>
       <div className={`col-half button ${bgc}`} onClick={this.handleClick}>
-       <button className={boxPosition}></button>
+        <button className={boxPosition}></button>
       </div>
         <div className='col-half display'>{isOn ? 'ON' : 'Off'}</div>
     </div>
