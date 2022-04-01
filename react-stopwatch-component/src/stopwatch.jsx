@@ -3,8 +3,10 @@ import React from 'react';
 class StopWatch extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { play: false };
-    this.state = { counter: 0 };
+    this.state = {
+      counter: 0,
+      play: false
+    };
     this.handlePlay = this.handlePlay.bind(this);
     this.play = this.play.bind(this);
     this.stop = this.stop.bind(this);
