@@ -1,0 +1,27 @@
+.container {
+  max-width: 800;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.col-full {
+  width: 100%;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.stopwatch {
+  font-size: 1rem;
+  border: solid black;
+  padding: 1.5rem;
+  border-radius: 50%;
+}
+
+p:hover {
+  cursor: pointer;
+}
