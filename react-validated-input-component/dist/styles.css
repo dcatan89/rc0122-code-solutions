@@ -1,0 +1,32 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.col-half {
+  width: 50%;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: flex-end;
+}
+
+.margin-zero {
+  margin: 0 auto;
+}
+
+.red-font {
+  color: red;
+}
+
+.green-font {
+  color: green;
+}
