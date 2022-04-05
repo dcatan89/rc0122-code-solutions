@@ -5,17 +5,23 @@ class ValidatedInput extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: ''
+      value: '',
+      valid: false
     };
     this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange(event) {
+    const password = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&()^#])[A-Za-z\d@$!%*?&()^#]{8,}$/g;
+    password.test(event.target.value)
+      ? this.setState({ valid: true })
+      : this.setState({ valid: false });
+
     this.setState({ value: event.target.value });
   }
 
   render() {
-    const { value } = this.state;
+    const { value, valid } = this.state;
     let isValidated;
     let fontColor;
     let errorCheck;
@@ -28,10 +34,14 @@ class ValidatedInput extends React.Component {
       errorCheck = 'Your password is too short';
       isValidated = 'fas fa-times';
       fontColor = 'red-font';
-    } else {
+    } else if (valid) {
       isValidated = 'fas fa-check';
       fontColor = 'green-font';
       errorCheck = '';
+    } else {
+      isValidated = 'fas fa-times';
+      fontColor = 'red-font';
+      errorCheck = 'Please Include One digit, capital, and special Character';
     }
 
     return (
