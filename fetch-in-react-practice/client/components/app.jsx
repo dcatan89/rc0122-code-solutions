@@ -52,9 +52,9 @@ export default class App extends React.Component {
     })
       .then(response => response.json())
       .then(data => {
-        newTodo = this.state.todos;
-        data = newTodo.concat(data);
-        this.setState({ todos: data });
+        const newTodo = this.state.todos;
+        const newestTodo = newTodo.concat(data);
+        this.setState({ todos: newestTodo });
       });
   }
 
@@ -89,21 +89,16 @@ export default class App extends React.Component {
     };
 
     if (todoId === indexId) {
-
-      todos[index].isCompleted
-        ? todos[index] = toggleCompleted
-        : todos[index] = toggleCompleted;
-
       fetch(`/api/todos/${todoId}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(todos[index])
+        body: JSON.stringify(toggleCompleted)
       })
         .then(response => response.json())
         .then(data => {
-          const newTodos = todos;
+          const newTodos = [...todos];
           newTodos[index] = data;
           this.setState({ todos: newTodos });
         });
