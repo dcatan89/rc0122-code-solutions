@@ -50,7 +50,8 @@ app.post('/api/auth/sign-in', (req, res, next) => {
   /* your code starts here */
   const sql = `
           SELECT "userId",
-              "hashedPassword"
+                 "hashedPassword",
+                 "username"
         from "users"
         where "username" = $1;
       `;
@@ -69,7 +70,7 @@ app.post('/api/auth/sign-in', (req, res, next) => {
             } else {
               const payload = {
                 userId: userlogin.userId,
-                username
+                username: userlogin.username
               };
               const token = jwt.sign(payload, process.env.TOKEN_SECRET);
               res.status(200).json({ token, user: payload });
