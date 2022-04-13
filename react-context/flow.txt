@@ -1,0 +1,12 @@
+User is routed when they press the register button to create an account
+when they register, the client sends the user info to server where
+it inserts the userinfo in the database and responds with a token
+
+when the user signs in the client sends the token to the server where it verifies the key
+and grants access for the user
+
+if the page is refreshed, depending on the expiration of the key, the user will stay signed
+in due to the token
+
+when the user signs out they are redirected to the signin/signup hash where they will need to login
+again and given a new token.
