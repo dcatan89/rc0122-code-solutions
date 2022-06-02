@@ -17,7 +17,7 @@ class StopWatch extends React.Component {
     this.setState({ play: true });
     this.timerID = setInterval(
       () => this.handlePlay(),
-      1000
+      2000
     );
   }
 
